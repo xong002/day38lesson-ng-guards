@@ -1,0 +1,20 @@
+<h1>Form</h1>
+
+<form [formGroup]="form">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" formControlName="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" formControlName="email"></td>
+        </tr>
+        <tr>
+            <td><button type="button" [routerLink]="['/']" >Back</button></td>
+            <td><button type="submit" [disabled]="!form.valid" (click)="process()">Submit</button></td>
+        </tr>
+    </table>
+
+
+</form>

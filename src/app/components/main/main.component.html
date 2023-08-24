@@ -1,0 +1,8 @@
+<h1>Main</h1>
+<h2><a [routerLink]="['/form']">Go to form</a></h2>
+<br>
+<ul>
+    <li *ngFor="let user of users">
+        <a [routerLink]="['/form/', user.userId]">{{user.name}}</a>
+    </li>
+</ul>
